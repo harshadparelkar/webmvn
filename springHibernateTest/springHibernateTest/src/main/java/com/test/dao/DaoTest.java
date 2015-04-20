@@ -13,23 +13,23 @@ import com.test.entity.Valuemap;
 public class DaoTest {
 
 	@Autowired
-	SessionFactory factory;
+	SessionFactory sessionFactory;
 	
 	
 	public SessionFactory getFactory() {
-		return factory;
+		return sessionFactory;
 	}
 
 
 	public void setFactory(SessionFactory factory) {
-		this.factory = factory;
+		this.sessionFactory = factory;
 	}
 
 
 	public void saveVal(String val) {
 		// TODO save to mysql
 		
-		Session session = factory.openSession();
+		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		
 		Valuemap valMap = new Valuemap();

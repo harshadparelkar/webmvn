@@ -5,7 +5,7 @@
             http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 
-	<bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+<!-- 	<bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="org.hsqldb.jdbcDriver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/test" />
 		<property name="username" value="root" />
@@ -24,6 +24,6 @@
 	
 	<bean id="testDao" class="com.test.dao.DaoTest">
 	    <property name="factory" ref="mySessionFactory"></property>
-	</bean>
+	</bean> -->
 
 </beans>
