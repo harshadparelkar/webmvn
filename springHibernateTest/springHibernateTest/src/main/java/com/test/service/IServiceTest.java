@@ -1,7 +1,9 @@
 package com.test.service;
 
+import com.test.entity.Valuemap;
+
 public interface IServiceTest {
 
-	void saveValToDb(String val);
+	void saveValToDb(Valuemap valmap);
 
 }

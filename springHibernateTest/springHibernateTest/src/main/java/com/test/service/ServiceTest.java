@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.test.dao.DaoTest;
+import com.test.entity.Valuemap;
 
 
 @Service("service")
@@ -17,8 +18,8 @@ public class ServiceTest implements IServiceTest{
 		System.out.println("Testing service");
 	}
 
-	public void saveValToDb(String val) {
+	public void saveValToDb(Valuemap valMap) {
 		
-		testDao.saveVal(val);
+		testDao.saveVal(valMap);
 	}
 }

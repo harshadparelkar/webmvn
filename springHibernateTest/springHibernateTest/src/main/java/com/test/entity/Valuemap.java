@@ -1,12 +1,27 @@
 package com.test.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="valuemap")
 public class Valuemap {
 
-	String 	key_col,
+	@Id
+	String	id;
+	
+	String	key_col,			
 			val_col;
+
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public String getKey_col() {
 		return key_col;

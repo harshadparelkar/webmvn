@@ -26,15 +26,13 @@ public class DaoTest {
 	}
 
 
-	public void saveVal(String val) {
+	public void saveVal(Valuemap valMap) {
 		// TODO save to mysql
 		
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		
-		Valuemap valMap = new Valuemap();
-		valMap.setKey_col(UUID.randomUUID().toString().substring(0, 20));
-		valMap.setVal_col(val);
+		valMap.setId(UUID.randomUUID().toString());
 		
 		session.save(valMap);
 		session.getTransaction().commit();

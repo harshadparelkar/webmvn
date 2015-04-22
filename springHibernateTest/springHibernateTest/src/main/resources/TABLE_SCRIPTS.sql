@@ -1,0 +1,1 @@
+create table valuemap (id varchar(255), key_col varchar(255), val_col varchar(200));
