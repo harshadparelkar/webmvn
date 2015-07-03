@@ -51,4 +51,16 @@
 	</bean>
 
 	
+	<bean id="emp" class="com.test.entity.TestEmp">
+	    <property name="empName" value="byType"/>
+	</bean>
+	
+	<bean id="emp1" name="emp1" class="com.test.entity.TestEmp">
+	    <property name="empName" value="byType1"/>
+	</bean>
+	
+		<bean id="emp2" class="com.test.entity.TestEmp">
+	    <property name="empName" value="byType2"/>
+	</bean>
+
 </beans>
