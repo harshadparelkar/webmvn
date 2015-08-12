@@ -1,5 +1,6 @@
 package com.test.hibernate.executor;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
 
@@ -16,7 +17,9 @@ public class EmployeeExe {
 		Session session = config.buildSessionFactory().openSession();		
 		session.beginTransaction();
 		
+		Criteria cr = session.createCriteria(Employee.class);
 		
+		cr.list();
 		
 		
 		session.getTransaction().commit();
